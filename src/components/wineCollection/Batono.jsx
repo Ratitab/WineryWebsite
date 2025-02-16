@@ -6,6 +6,8 @@ import wine5 from "../../assets/img/wine_5.png";
 import wine6 from "../../assets/img/wine_6.png";
 import DefaultLayout from "../../layouts/DefaultLayout";
 import pietreDiLuna from '../../assets/pdfs/Tech Sheet Pietre di Luna.pdf'
+import "./css/index.css"
+
 
 const WineCollectionBatono = () => {
 
@@ -39,11 +41,15 @@ const WineCollectionBatono = () => {
           <div className="row">
             {wines.map((wine, index) => (
               <div key={index} className="col-md-2 col-sm-4">
-                <div className="team-1-member" onClick={() => handleWineClick(wine.pdf)}>
+                <div className="team-1-member">
                   <img alt={wine.name} className="background-image" src={wine.image} />
                   <h5>{wine.name}</h5>
                   <span>{wine.description}</span><br />
                 </div>
+                <div className="DetailsBtnColletion">
+                    <button >Buy</button>
+                    <button onClick={() => handleWineClick(wine.pdf)}>See More</button>
+                  </div>
               </div>
             ))}
           </div>

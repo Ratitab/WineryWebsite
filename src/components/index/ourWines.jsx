@@ -17,7 +17,6 @@ import ProductCard from "../productCard";
 import DefaultLayout from "../../layouts/DefaultLayout";
 
 const OurWines = () => {
-
   const products = [
     {
       image: mildianiLogo,
@@ -25,7 +24,7 @@ const OurWines = () => {
         id: 123,
         name: "Mildiani",
       },
-      route: 'wine-collection/mildiani'
+      route: "wine-collection/mildiani",
     },
     {
       image: batonoLogo,
@@ -33,7 +32,7 @@ const OurWines = () => {
         id: 124,
         name: "BATONO",
       },
-      route: 'wine-collection/batono'
+      route: "wine-collection/batono",
     },
   ];
 
@@ -48,74 +47,53 @@ const OurWines = () => {
             ))}
           </div>
 
-          {/* Text Section */}
           <section className="duplicatable-content pure-text">
             <div className="container">
               <div className="row">
                 <div className="col-sm-12 text-center">
-                  <h1>Which one fits to you?</h1>
+                  <h1>Discover Our Wine Collections</h1>
                 </div>
               </div>
               <div className="row">
-                {[
-                  {
-                    title: "Nemo enim ipsam voluptatem",
-                    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-                  },
-                  {
-                    title: "Dolorem ipsum quia dolor sit amet",
-                    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-                  },
-                  {
-                    title: "Fugiat quo voluptas nulla pariatur",
-                    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.",
-                  },
-                ].map((item, index) => (
-                  <div className="col-sm-4" key={index}>
-                    <h6>{item.title}</h6>
-                    <p>{item.text}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </section>
+                <div className="col-sm-4">
+                  <h6>Regional Wines</h6>
+                  <p>
+                    Our regional wines express the colorful personality and
+                    diversity of Kakhetian traditional wines, which have been
+                    adored for centuries by wine lovers. They are young, fresh
+                    and redolent, highlighting the regional character and
+                    intended to reflect the best of Kakheti terroir and Alazani
+                    Valley.
+                  </p>
+                </div>
 
-          {/* Testimonials Section */}
-          <section className="bg-primary">
-            <div className="container">
-              <div className="row">
-                <div className="col-sm-8 col-sm-offset-2">
-                  <div className="testimonials-slider text-center">
-                    <ul className="slides">
-                      {[
-                        {
-                          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                          author: "John Doe",
-                        },
-                        {
-                          text: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor.",
-                          author: "Jessica Marks",
-                        },
-                        {
-                          text: "Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-                          author: "Steven Hanson",
-                        },
-                      ].map((item, index) => (
-                        <li key={index}>
-                          <p className="text-white lead">{item.text}</p>
-                          <span className="author text-white">
-                            {item.author}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="col-sm-4">
+                  <h6>Single Vineyard Wines</h6>
+                  <p>
+                    Sourced exclusively from dedicated vineyard areas, with
+                    grape yields limited to 6-7 tons per hectare. Strict
+                    selection of grapes in the vineyard, hand sorting in the
+                    winery before crushing, and careful winemaking processes
+                    ensure the highest quality wines that showcase our best
+                    terroirs.
+                  </p>
+                </div>
+
+                <div className="col-sm-4">
+                  <h6>Traditional Kvevri Wines</h6>
+                  <p>
+                    Our most cherished wine line is produced in compliance with
+                    ancient winemaking techniques dating back 6000 years, in
+                    traditional clay jars - Kvevris, buried in the cellar's
+                    earthen floor. The grapes are sourced from selected vineyard
+                    plots, with limited yields for maximum quality and
+                    concentration.
+                  </p>
                 </div>
               </div>
             </div>
           </section>
         </div>
-
       </DefaultLayout>
     </div>
   );

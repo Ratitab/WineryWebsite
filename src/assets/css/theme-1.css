@@ -962,6 +962,7 @@ header.signup:before {
   position: relative;
   overflow: hidden;
   padding: 0px;
+  margin-top: 29px;
 }
 .product-right h1 {
   margin-bottom: 32px;
@@ -3900,7 +3901,7 @@ footer.short-2 .contact-action:hover {
 }
 .centered-logo .logo {
   max-width: 800px;
-  max-height: 50px;
+  max-height: 80px;
   bottom: 0px;
   margin-top: 32px;
 }
